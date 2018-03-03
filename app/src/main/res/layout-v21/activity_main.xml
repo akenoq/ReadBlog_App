@@ -1,0 +1,85 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:layout_width="390dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:text="@string/title_main"
+                android:textAlignment="center"
+                android:textColor="@color/title_main"
+                android:textSize="36sp" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/textView"
+                android:text="@string/button_settings" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/article_name"
+            android:textAlignment="viewStart"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="136dp"
+            android:text="@string/article_content"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/article_date"
+            android:textAlignment="textEnd"
+            android:textStyle="italic" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_1"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/button_2"
+                android:background="@color/button_update"
+                android:onClick="loadArticle"
+                android:text="Обновить" />
+
+            <Button
+                android:id="@+id/button_2"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_alignParentEnd="true"
+                android:background="@color/button_subscribe"
+                android:text="Подписаться" />
+                <!--android:layout_toEndOf="@+id/button_1"-->
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

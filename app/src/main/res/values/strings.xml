@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ReadBlog</string>
+    <string name="title_main">Статьи</string>
+    <string name="button_settings">\u2699</string>
+    <string name="title_settings">U+2699</string>
+    <string name="article_name">Заголовок 1</string>
+    <string name="article_content">Текст статьи</string>
+    <string name="article_date">DD.MM.YYYY</string>
+</resources>

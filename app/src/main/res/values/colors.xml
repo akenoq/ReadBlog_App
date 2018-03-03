@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e98800</color>
+    <color name="colorPrimaryDark">#9f3930</color>
+    <color name="colorAccent">#cbcedc</color>
+    <color name="title_main">#9acc6600</color>
+    <color name="button_update">#ffa240</color>
+    <color name="button_subscribe">#aff16e</color>
+</resources>
