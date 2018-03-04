@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -15,10 +16,17 @@ import android.widget.TextView;
  */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    // обьявляем кнопку
+    Button settingButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // привязываем слушателя
+        settingButton = (Button) findViewById(R.id.button_settings);
+        settingButton.setOnClickListener(this);
     }
 
     public void loadArticle(View view) {
@@ -35,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button_settings:
                 // вызываем вторую активность
                 // создаем обьект intent(контент, класс второй активности)
-                Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+                Intent intent = new Intent(this, SettingsActivity.class);
                 // стартуем вторую активность
                 startActivity(intent);
                 break;
